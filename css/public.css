@@ -1,0 +1,19 @@
+.header-navigation-content {
+    min-width: 400px;
+}
+
+
+.site-logo{
+    padding: 20px 0;
+}
+
+.container{
+    width:1080px;
+}
+
+.front-step-col{
+    min-height: 120px;
+}
+.front-step{
+    min-height: 120px;
+}
