@@ -17,3 +17,36 @@
 .front-step{
     min-height: 120px;
 }
+
+.carousel-slider .carousel-position-six {
+    position: absolute;
+    top: 15%;
+    left: auto;
+}
+
+
+.pricing-head h4{
+    font-size: 20px;
+}
+
+
+
+#div_center_search{
+    width: 400px;padding: 10px 30px 30px 30px;
+}
+
+#txt_center_search{
+    border-radius: 5px 0 0 5px !important;
+    height: 40px;
+    cursor: pointer;
+}
+
+#btn_center_search{
+    border-radius: 0 5px 5px 0 !important;
+    height: 40px;
+}
+
+.btn-search-center-grey{
+    background: grey;
+    color: white;
+}

@@ -32,4 +32,28 @@ function init(){
         }
     )
 
+    $('#div_center_search').mouseover(
+        function(){
+            $('#div_center_search').animate({width:'500px'})
+            $('#btn_center_search').removeClass('btn-search-center-grey')
+        }
+    )
+    $('#div_center_search').mouseleave(
+        function(){
+            $('#div_center_search').animate({width:'400px'})
+            $('#btn_center_search').addClass('btn-search-center-grey')
+        }
+    )
+
+    $('#btn_center_search').click(
+        function() {
+            if(isValidCode($('#txt_center_search').val().trim())){
+                goQuery($('#txt_center_search').val().trim());
+            }
+            else{
+                alert('请输入正确的--运单号--')
+                return
+            }
+        }
+    )
 }

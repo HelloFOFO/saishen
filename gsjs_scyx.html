@@ -78,7 +78,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               </ul>
             </li>
 
-            <li><a href="fwzz">服务宗旨</a></li>
+            <li><a href="fwzz.html">服务宗旨</a></li>
 
             <li class="dropdown dropdown-megamenu">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">专业能力
@@ -112,22 +112,22 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 
             <li><a href="hzhb">合作伙伴</a></li>
 
-              <!-- BEGIN TOP SEARCH -->
-              <li class="menu-search">
-                  <span class="sep"></span>
-                  <i class="fa fa-search search-btn" style="color:red"></i>
-                  <div class="search-box">
-                      <form action="#">
-                          <div class="input-group">
+              <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;" style="color: #ce8483;">
+                      <span class="fa fa-search"></span>单号查询
+                  </a>
+
+                  <ul class="dropdown-menu">
+                      <li>
+                          <div class="input-group" style="min-width: 350px; padding: 8px;">
                               <input type="text" placeholder="输入运单号..." class="form-control" id="txt_search">
                               <span class="input-group-btn">
-                      <button class="btn btn-primary" type="submit" id="btn_search">单号查询</button>
-                    </span>
+                              <button class="btn btn-primary" type="submit" id="btn_search">单号查询</button>
+                          </span>
                           </div>
-                      </form>
-                  </div>
+                      </li>
+                  </ul>
               </li>
-              <!-- END TOP SEARCH -->
 
           </ul>
         </div>
@@ -254,7 +254,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         function initMe(){
             Layout.init()
             Layout.initOWL()
-            Layout.initTwitter()
+
             init()
         }
 
