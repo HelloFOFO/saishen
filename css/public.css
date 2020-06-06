@@ -50,3 +50,31 @@
     background: grey;
     color: white;
 }
+
+.div-zznl-bz img{
+    width: 245px;
+}
+
+.div-zznl-cl img{
+    height: 160px;
+    width: 230px;
+}
+
+.div-zznl-cl-left-1{
+    background-color: #e18604;
+    width: 80%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.div-zznl-cl-left-2{
+    background-color: #0da3e2;
+    width: 80%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 25px;
+    margin: 30px 0px;
+}
