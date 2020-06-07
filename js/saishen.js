@@ -32,7 +32,7 @@ function init(){
         }
     )
 
-    $('#div_center_search').mouseover(
+    $('#div_center_search').mouseenter(
         function(){
             $('#div_center_search').animate({width:'500px'})
             $('#btn_center_search').removeClass('btn-search-center-grey')
