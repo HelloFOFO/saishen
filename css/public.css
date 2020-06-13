@@ -137,3 +137,17 @@
     margin-top: 35px;
     font-size: 20px;
 }
+
+.div-hzhb-icon img{
+    width: 100px;
+}
+
+
+.div-hzhb-icon li{
+    display: inline-block;
+    margin: 4px 5px 4px 5px;
+}
+
+h1 .fa{margin-right: 5px;}
+h2 .fa{margin-right: 5px;}
+h3 .fa{margin-right: 5px;}

@@ -7,9 +7,11 @@ var request = {
     }
 }
 
-function goQuery(inputCodes){
-//    alert("后台系统研发中，上线后会立即开放查询功能");
-    window.location.href = "srch.html?codes="+inputCodes;
+function goQuery(formSearch){
+    // alert("后台系统研发中，上线后会立即开放查询功能")
+    $(formSearch).attr("action","http://www.c-logistics.cn/cgi-bin/GInfo.dll?EmmisTrack")
+    $(formSearch).submit()
+    return
 }
 
 //用于判断是否是正确的运单号
@@ -21,9 +23,10 @@ let isValidCode = function(val){
 function init(){
     //设置搜索按钮的动作
     $('#btn_search').click(
-        function() {
+        function(e) {
+            e.preventDefault()
             if(isValidCode($('#txt_search').val().trim())){
-                goQuery($('#txt_search').val().trim());
+                goQuery($(this).parents('form'))
             }
             else{
                 alert('请输入正确的--运单号--')
@@ -31,6 +34,20 @@ function init(){
             }
         }
     )
+
+    $('#btn_center_search').click(
+        function(e) {
+            e.preventDefault()
+            if(isValidCode($('#txt_center_search').val().trim())){
+                goQuery($(this).parents('form'))
+            }
+            else{
+                alert('请输入正确的--运单号--')
+                return
+            }
+        }
+    )
+
 
     $('#div_center_search').mouseenter(
         function(){
@@ -45,15 +62,4 @@ function init(){
         }
     )
 
-    $('#btn_center_search').click(
-        function() {
-            if(isValidCode($('#txt_center_search').val().trim())){
-                goQuery($('#txt_center_search').val().trim());
-            }
-            else{
-                alert('请输入正确的--运单号--')
-                return
-            }
-        }
-    )
 }
