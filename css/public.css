@@ -2,6 +2,23 @@
     min-width: 400px;
 }
 
+.header-navigation{
+    font-size: 20px;
+}
+
+.header-navigation ul li{
+    margin: 0px 4px;
+}
+
+.content-page h2{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cecece;
+}
+
+.main h1{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cecece;
+}
 
 .site-logo{
     padding: 20px 0;
@@ -136,6 +153,12 @@
 .div-zznl-cz p{
     margin-top: 35px;
     font-size: 20px;
+}
+
+.div-hzhb-icon{
+    min-height: 250px;
+    /*border-top: 2px solid grey;*/
+    border-radius: 5px;
 }
 
 .div-hzhb-icon img{
