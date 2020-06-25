@@ -48,6 +48,19 @@ function init(){
         }
     )
 
+    $('#btn_right_search').click(
+        function(e) {
+            e.preventDefault()
+            if(isValidCode($('#txt_right_search').val().trim())){
+                goQuery($(this).parents('form'))
+            }
+            else{
+                alert('请输入正确的--运单号--')
+                return
+            }
+        }
+    )
+
 
     $('#div_center_search').mouseenter(
         function(){
