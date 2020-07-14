@@ -8,8 +8,11 @@ var request = {
 }
 
 function goQuery(formSearch){
+    let inputW = $("<input type='hidden' name='w' value='wmxwl' />")
+
     // alert("后台系统研发中，上线后会立即开放查询功能")
-    $(formSearch).attr("action","http://www.c-logistics.cn/cgi-bin/GInfo.dll?EmmisTrack")
+    $(formSearch).attr("action","http://www.weimaxunsh.com/cgi-bin/GInfo.dll?EmmisTrack")
+    $(formSearch).append(inputW)
     $(formSearch).submit()
     return
 }
